@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import './App.module.css';
+import s from './App.module.css'
+import {Counter} from "./components/Counter/Counter";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const maxCount = 5;
+    const initCount = 0;
+
+    const [count, setCount] = useState<number>(initCount);
+
+    const changeCount = () => {
+        if (count < maxCount) {
+            setCount(count + 1)
+        }
+    };
+
+    const resetCount = () => {
+        setCount(initCount)
+    }
+
+    return (
+        <div className={s.app}>
+            <Counter count={count}
+                     callBack={changeCount}
+                     callBack1={resetCount}
+                     maxCount={maxCount}
+                     initCount={initCount}/>
+        </div>
+    );
 }
 
 export default App;

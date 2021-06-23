@@ -1,0 +1,29 @@
+.counter {
+    border: 2px solid #FFCD24;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.count {
+    background-color: #FFCD24;
+    border-radius: 10px;
+    font-size: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.countRed {
+    font-weight: bold;
+    color: red;
+    background-color: #FFCD24;
+    border-radius: 10px;
+    font-size: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid #FFCD24;
+}
