@@ -3,8 +3,8 @@ import React from "react";
 
 type ButtonPropsType = {
     value: string
-    disabled: boolean
-    conditions: () => void
+    disabled?: boolean
+    conditions?: () => void
 }
 
 export const Button: React.FC<ButtonPropsType> = (props) => {

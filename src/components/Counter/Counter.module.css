@@ -10,6 +10,7 @@
     font-size: 80px;
     padding: 10px;
     margin-bottom: 10px;
+    width: 300px;
 }
 
 .countRed {
@@ -20,10 +21,12 @@
     font-size: 80px;
     padding: 10px;
     margin-bottom: 10px;
+    width: 300px;
 }
 
 .button {
     display: flex;
     border-radius: 10px;
     border: 2px solid #FFCD24;
+    justify-content: center;
 }

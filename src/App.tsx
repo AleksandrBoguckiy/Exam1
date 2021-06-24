@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './App.module.css';
 import s from './App.module.css'
 import {Counter} from "./components/Counter/Counter";
+import {CounterOptions} from "./components/CounterOptions/CounterOptions";
 
 function App() {
 
@@ -9,7 +10,6 @@ function App() {
     const initCount = 0;
 
     const [count, setCount] = useState<number>(initCount);
-
     useEffect(() => {
         let countAsString = localStorage.getItem('counterValue')
         if (countAsString) {
@@ -40,6 +40,7 @@ function App() {
                      callBack1={resetCount}
                      maxCount={maxCount}
                      initCount={initCount}/>
+            <CounterOptions/>
         </div>
     );
 }

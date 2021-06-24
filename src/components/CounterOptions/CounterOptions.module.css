@@ -1,0 +1,54 @@
+.counter {
+    border: 2px solid #FFCD24;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+.inputBlock {
+    border: 2px solid #FFCD24;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    block-size: 103px;
+    width: 300px;
+}
+
+.inputMax {
+    padding: 8px;
+}
+
+input {
+    border: 2px solid #FFCD24;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    background-color: #FFCD24;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px;
+}
+
+.button {
+    border-radius: 10px;
+    border: 2px solid #FFCD24;
+    justify-content: center;
+}
+
+/*.countRed {
+    font-weight: bold;
+    color: red;
+    background-color: #FFCD24;
+    border-radius: 10px;
+    font-size: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+}*/
+
+/*.count {
+    background-color: #FFCD24;
+    border-radius: 10px;
+    font-size: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+}*/
